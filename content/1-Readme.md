@@ -91,8 +91,34 @@ Beachte das *min. zwei Markdowndateien* vorhanden sein müssen.
     $bildformat = "svg"    # Bildformate: svg, jpg, png
     $codeformat = "sh"     # Codeformate: c, cpp, sh, py, ps1
     $language = "Powershell"   # Latex-Code:  C, [LaTeX]TeX, Bash, Python, Powershell
-  # Shell: Script ausfuehren
+~~~
+
+**PowerShell: Script ausfuehren**
+
+~~~
   $ ./docKonverter-v02.ps1
+  ju -- https://bw1.eu -- 26-Okt-18
+
+  Auswahlmenue
+  ============
+
+    (0) schnell PDF erstellen
+    (1) artikel.pdf
+    (2) book.pdf
+    (3) print.pdf
+    (4) alle Abbildungen.tex
+    (5) alle Quellcodedateien.tex
+    (6) backup - "../$archiv/$timestampArchiv-$thema.zip"
+    (7) git - Repository auf github notwendig!
+    (8) imgWeb.ps1 # ext. Script - Bilder optimieren (Latex/Web)
+    (9) html
+    (10) pandoc & suchen/ersetzen - Achtung: min. zwei Markdown Dateien notwendig !!!
+    (11) Projekt reset
+    (12) Projekt neu
+    (13) Beenden
+
+  *********************************
+  Eingabe - [Zahl]:
 ~~~
 
 ## Bilder optimieren
