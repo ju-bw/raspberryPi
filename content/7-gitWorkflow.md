@@ -6,9 +6,8 @@
 
 ~~~ 
   git log --oneline  # less beenden mit <Shift+q>
-  git log --graph
-  git log --graph --decorate --pretty=oneline --abbrev-commit 
-  git log --graph --decorate --pretty=format:"%ad; %h; %s" --no-merges --date=short > log.txt
+  git log --graph --oneline 
+  git log --graph --pretty=format:";  %cn;  %h;  %ad;  %s" --date=relative > log.txt
 ~~~
 
 ## branch erstellen - wechseln - löschen
@@ -23,7 +22,7 @@
 
 ## Entwicklungs Zweig
 
-rasperryPi neu erstellen
+raspberryPi neu erstellen
 
 ~~~
   # git config u. .gitignore
@@ -31,14 +30,14 @@ rasperryPi neu erstellen
   git init
   git status
   git add . # lokale aenderungen
-  git commit -am"rasperryPi start"
+  git commit -am"raspberryPi start"
   # Entwicklungszweig erstellen u. wechseln
   git checkout -b entwicklung 
   git log --oneline
-    b7a87de (HEAD -> entwicklung, master) rasperryPi start
+    b7a87de (HEAD -> entwicklung, master) raspberryPi start
 ~~~
 
-**rasperryPi bearbeiten**
+**raspberryPi bearbeiten**
 
 ~~~
   git branch
@@ -81,11 +80,11 @@ lokales Repository erstellen (zentrales Repository)
 
 ~~~
   # auf "master" branch wechseln
-  git clone --bare . ../rasperryPi.git
+  git clone --bare . ../raspberryPi.git
   git status
   # aenderungen veroeffentlichen
-  git pull ../rasperryPi.git master
-  git push ../rasperryPi.git master
+  git pull ../raspberryPi.git master
+  git push ../raspberryPi.git master
   git log --oneline
     f3d7d67 (HEAD -> master) Merge branch 'entwicklung'
 ~~~
@@ -93,7 +92,7 @@ lokales Repository erstellen (zentrales Repository)
 Arbeitskopie erstellen
 
 ~~~
-  git clone ../rasperryPi.git .
+  git clone ../raspberryPi.git .
 ~~~
 
 ### github Server
@@ -105,7 +104,7 @@ Remote Repository auf github erstellen
 ~~~
   # auf "master" branch wechseln
   # aenderungen veroeffentlichen
-  git remote add origin https://github.com/ju-bw/rasperryPi.git
+  git remote add origin https://github.com/ju-bw/raspberryPi.git
   git push -u origin master
   git status
   git pull
@@ -117,6 +116,6 @@ Remote Repository auf github erstellen
 Arbeitskopie erstellen
 
 ~~~
-  git clone https://github.com/ju-bw/rasperryPi.git .
+  git clone https://github.com/ju-bw/raspberryPi.git .
 ~~~
 

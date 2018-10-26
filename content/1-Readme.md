@@ -47,11 +47,11 @@ Git: <https://git-scm.com/downloads>
 Imagemagick: <https://www.imagemagick.org/script/download.php#windows>
 
 
-## Repository rasperryPi von Github downloaden
+## Repository raspberryPi von Github downloaden
 
 ~~~
   # Shell: Kopie downloaden
-  $ git clone https://github.com/ju-bw/rasperryPi.git .
+  $ git clone https://github.com/ju-bw/raspberryPi.git .
 ~~~
 
 ## neues Repository auf github anlegen
@@ -59,20 +59,20 @@ Imagemagick: <https://www.imagemagick.org/script/download.php#windows>
 ~~~
   # https://github.com/new
   # github: Create a new repository
-  # Repository name = rasperryPi
+  # Repository name = raspberryPi
   # Shell: Git Befehle
   # ".gitconfig", ".gitignore" konfigurieren und erstellen
   git init
   git add .
   git commit -am "Projekt start"
-  git remote add origin https://github.com/ju-bw/rasperryPi.git
+  git remote add origin https://github.com/ju-bw/raspberryPi.git
   git push -u origin master 
   git status
   git pull
   git push
-  git log --oneline
-  git log --graph --oneline --decorate --pretty=format:"%ad; %h; %s" --no-merges --date=short > log.txt
-  git log --oneline --decorate --pretty=format:"%ad;%h;%s" --no-merges --date=short > log.csv 
+  git log --oneline  # less beenden mit <Shift+q>
+  git log --graph --oneline 
+  git log --graph --pretty=format:";  %cn;  %h;  %ad;  %s" --date=relative > log.txt 
 ~~~
 
 ## Markdown Dokumente / Notizen
@@ -87,7 +87,7 @@ Beachte das *min. zwei Markdowndateien* vorhanden sein müssen.
   # Editor - Powershellscript "docKonverter-v02.ps1" anpassen
     ### Projekt
     # anpassen
-    $thema = "rasperryPi" # Thema
+    $thema = "raspberryPi" # Thema
     $bildformat = "svg"    # Bildformate: svg, jpg, png
     $codeformat = "sh"     # Codeformate: c, cpp, sh, py, ps1
     $language = "Powershell"   # Latex-Code:  C, [LaTeX]TeX, Bash, Python, Powershell

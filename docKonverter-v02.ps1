@@ -56,7 +56,7 @@ $autor = "ju -- https://bw1.eu -- $timestampFile"
 
 ### Projekt
 # anpassen
-$thema = "RasperryPi" # Thema
+$thema = "RaspberryPi" # Thema
 $bildformat = "svg"    # Bildformate: svg, jpg, png
 $codeformat = "py"     # Codeformate: c, cpp, sh, py, ps1
 $language = "Python"   # Latex-Code:  C, [LaTeX]TeX, Bash, Python, Powershell
