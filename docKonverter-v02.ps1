@@ -511,6 +511,7 @@ while($nochmal){
       git commit -a # vim Texteingabe: <i> / beenden mit <ESC : wq>
       git pull
       git push
+      trennLinie 33 *
       #git log --oneline  # less beenden mit <Shift+q>
       git log --graph --oneline 
       git log --graph --pretty=format:";  %cn;  %h;  %ad;  %s" --date=relative > log.txt 
