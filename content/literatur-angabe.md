@@ -1,5 +1,13 @@
 # Bücher - Literaturangabe
 
+Quelle \footfullcite{weigend_raspberry:2016} Raspberry Pi programmieren mit Python \cite{weigend_raspberry:2016}
+
+Quelle \footfullcite{weigend_python:2018} Python 3: Lernen und professionell anwenden. \cite{weigend_python:2018}
+
+Quelle \footfullcite{monk_elektronik-hacks:2013} Elektronik-Hacks \cite{monk_elektronik-hacks:2013}
+
+Quelle \footfullcite{monk_action-buch:2016} Das Action-Buch für Maker \cite{monk_action-buch:2016}
+
 Quelle \footfullcite{bosch_training:2018} Bosch Training \cite{bosch_training:2018}
 
 Quelle \footfullcite{schlosser_latex:2016} Latex \cite{schlosser_latex:2016}

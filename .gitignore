@@ -36,6 +36,8 @@ tex/
 *.bcf
 *.blg
 *.run*
+*.fls
+*.fdb_latexmk
 
 
 
