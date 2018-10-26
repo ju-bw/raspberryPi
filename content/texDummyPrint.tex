@@ -1,0 +1,63 @@
+% ju -- https://bw1.eu -- 27-April-18  -- texDummyPrint.tex
+% Modified source from 
+% <https://www.dcl.hpi.uni-potsdam.de/media/theses/>
+%
+\documentclass{scrbook} % <= Druckversion: "scrbook", Bildschirmversion: "scrreprt"
+\newcommand\bcor{12mm} % <= Bindungskorrektur fuer Druckversion
+\usepackage{content/ju-print}% meine Einstellung
+
+% ABOUT
+\newcommand{\typ}{Projekt}
+\newcommand{\autor}{Jan Unger}
+\newcommand{\titel}{Haupttitel} % wird per Powershell Script ersetzt
+\newcommand{\untertitel}{Mitschrift} 
+\newcommand{\ort}{Wuppertal}
+\newcommand{\datum}{\today}
+\newcommand{\website}{https://bw1.eu}
+
+% DOCUMENT
+%\KOMAoption{draft}{true} % <= z.B. zum "Debuggen" der Overfull-Boxes
+\bibliography{content/literatur}% meine Literatur
+\bibliography{content/literatur-laufen}% meine Literatur
+
+\begin{document}
+	\selectlanguage{ngerman}
+
+	% Einband
+	\pagenumbering{alph}
+	\ifisbook\include{content/coverpage}\fi
+	\ifisbook\cleardoubleemptypage\fi
+
+	% (Haupt-)Titelseite, Zusammenfassung, ggf. Danksagung & Inhaltsverzeichnis
+	\pagenumbering{roman}
+	\include{content/titlepage}
+	\ifisbook\cleardoubleemptypage\fi\include{content/zusammenfassung}% example
+	\ifisbook\cleardoubleemptypage\fi\include{content/danksagung}% example
+	\tableofcontents
+	\cleardoublepage
+
+	% Textteil
+	\pagenumbering{arabic}
+	
+
+	\include{content/inhalt} % wird per Powershell Script ersetzt
+  
+  \chapter{Kapitel}
+	\include{content/LatexSpickzettel} % LatexSpickzettel.tex
+  
+
+	% ggf. Anhang
+	\appendix\include{content/anhang} % example
+
+	% Bibliographie
+	\ifisbook\cleardoubleemptypage\fi
+	\phantomsection\addcontentsline{toc}{chapter}{\refname}
+	\printbibliography[category=cited]
+
+	% Eigenstaendigkeitserklaerung
+	\ifisbook\pagestyle{plain}\cleardoubleemptypage\include{content/erklaerung}\fi % example
+
+\end{document}
+%============================
+%============================
+%============================

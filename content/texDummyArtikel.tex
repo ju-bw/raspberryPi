@@ -1,0 +1,14 @@
+% Latex: ju -- https://bw1.eu -- 10-Okt-18  -- texDummyArtikel.tex 
+\documentclass[fontsize=12pt, a4paper, parskip=half]{scrartcl} % parskip = Absatzabstand
+\usepackage[T1]{fontenc}               % Schriftarten 
+\usepackage[english,ngerman]{babel}    % dt. Silbentrennung 
+\usepackage[utf8]{inputenc}            % Kodierung 
+%\usepackage{lmodern}                  % Schrift
+\include{content/praeambel}						 % meine Einstellungen
+\bibliography{content/literatur}       % Bibliotheksdatei
+\bibliography{content/literatur-laufen}% Bibliotheksdatei
+\begin{document}
+  %\include{content/LatexSpickzettel}  % LatexSpickzettel.tex
+  \include{tex/DUMMY}                  % Inhalt  
+	\printbibliography[heading=bibintoc] % Bibliographie
+\end{document}

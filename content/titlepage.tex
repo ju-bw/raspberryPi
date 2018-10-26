@@ -1,0 +1,45 @@
+% ju -- https://bw1.eu -- 25-April-18  -- titelpage.tex 
+% Modified source from 
+% <https://www.dcl.hpi.uni-potsdam.de/media/theses/>
+%
+\begin{titlepage}
+	\setlength{\evensidemargin}{0.5\evensidemargin+0.5\oddsidemargin}
+	\setlength{\oddsidemargin}{\evensidemargin}
+
+	\centering
+	
+	\raisebox{-0.5\height}{\includegraphics[width=9cm]{content/titelbild.pdf}}
+	\hspace*{.2\textwidth}
+	\raisebox{-0.5\height}{\includegraphics[width=1cm]{content/logo.pdf}}
+	\hfill
+	\vspace{3mm}
+	{\color{meinblue} \rule{\textwidth}{3pt}}
+	
+
+	\vspace*{4\baselineskip}
+	{\usekomafont{subject}\typ}\par
+	
+	\vfill
+	{\usekomafont{title}\titel\par}
+	\vspace*{\baselineskip}
+	{\usekomafont{subtitle}\untertitel}\par
+	
+	\vfill
+	{\textbf{\iflanguage{ngerman}{von}{by}}\\ 
+		\smallskip\usekomafont{author}\autor}\par
+	
+	\vfill
+	{\usekomafont{date}\ort}\par
+
+	\vspace*{\baselineskip}
+	{\usekomafont{date}\datum}\par
+  
+	\begin{flushleft}
+	\vfill
+  {\qrcode[hyperlink,height=1.5cm]{\website}}\par
+	\end{flushleft}
+
+	\setcounter{page}{1}
+
+\end{titlepage}
+
