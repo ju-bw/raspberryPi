@@ -1,6 +1,6 @@
 # Raspi
 
- Das Action-Buch.\footfullcite{monk_action-buch:2016} Quelle  \cite{monk_action-buch:2016}
+Action-Buch\footfullcite{monk_action_buch:2016} Quelle  \cite{monk_action_buch:2016}
 
 ![raspberryPi-3-001](img/raspberryPi-3-001.pdf)
 
